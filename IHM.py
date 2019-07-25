@@ -67,10 +67,10 @@ class Application(Tk):
         self.deb = ttk.Combobox(self.conf_data, values=self.liste_champs, width=30, height=1)
         self.deb.grid(row=5, column=2, padx=10, pady=10, sticky=W)
 
-        self.lab_mat = Label(self.conf_data, text="Matricule")
+        self.lab_mat = Label(self.conf_data, text="Champ dernière occurence")
         self.lab_mat.grid(row=4,column=1, padx=20,sticky=W)
 
-        self.date_deb = Label(self.conf_data, text="Date début")
+        self.date_deb = Label(self.conf_data, text="Date occurence")
         self.date_deb.grid(row=5, column=1, padx=20, sticky=W)
 
         self.ex_menu = LabelFrame(self.control_menu, text="Execution", width=200, height=100, labelanchor='n')
